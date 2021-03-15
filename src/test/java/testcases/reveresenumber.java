@@ -12,12 +12,21 @@ public class reveresenumber {
 
 		int num = sc.nextInt();
 
-		StringBuilder sbl = new StringBuilder();
+		//logic 1 
+		
+		/*StringBuilder sbl = new StringBuilder();
 		sbl.append(num);
 		StringBuilder rev = sbl.reverse();
-		System.out.println("reverse number is:" + rev);
-    
+		System.out.println("reverse number is:" + rev);*/
 		
+		//logic 2 
+		
+		StringBuffer sb =new StringBuffer(String.valueOf(num));
+		
+		StringBuffer rev =sb.reverse();
+		
+		
+		System.out.println(" reverse number:"+rev);
 		
 
 	}

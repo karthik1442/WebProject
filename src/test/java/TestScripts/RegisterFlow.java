@@ -1,4 +1,4 @@
-package testcases;
+package TestScripts;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -11,25 +11,21 @@ import projectPages.RegisterPageElements;
 
 public class RegisterFlow {
 
-	RegisterPageElements register =new RegisterPageElements();
-	
-	
+	RegisterPageElements register = new RegisterPageElements();
 
-    @Test
-	public void loginflow01()
-	{
-		
+	@Test
+	public void loginflow01() {
+
 		WebDriverManager.chromedriver().setup();
-		ChromeDriver driver =new ChromeDriver();
+		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/#/index");
 		driver.manage().window().maximize();
-        register.click();
-        register.loginDifferentAccount();
-        register.Emailaddress("kutalakarthik@gmail.com");
-        register.password("Kutala1992@");
-        register.LoginButton();
-	
-	
-}
+		register.click();
+		register.loginDifferentAccount();
+		register.Emailaddress("kutalakarthik@gmail.com");
+		register.password("Kutala1992@");
+		register.LoginButton();
+
+	}
 
 }

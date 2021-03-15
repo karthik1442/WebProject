@@ -1,4 +1,4 @@
-package TestAutomationScripts;
+package TestScripts;
 
 	import org.openqa.selenium.Alert;
 	import org.openqa.selenium.By;
