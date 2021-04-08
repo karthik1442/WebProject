@@ -18,6 +18,7 @@ public class GitLaunch {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 	    driver.get("https://github.com/");
+	    driver.manage().window().maximize();
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 	    driver.findElement(By.xpath("//a[normalize-space()='Sign in']")).click();
 	    Thread.sleep(2000);
@@ -27,7 +28,12 @@ public class GitLaunch {
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//*[@id=\"repos-container\"]/ul/li[1]/div/a/span[1]")).click();
 	    Thread.sleep(2000);
-	    driver.close();
+	    driver.findElement(By.xpath("//summary[@title='Switch branches or tags']")).click();
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//input[@id='context-commitish-filter-field']")).sendKeys("Develop_branch");
+	    Thread.sleep(2000);
+	    driver.findElement(By.xpath("//span[normalize-space()='Develop_branch']")).click();
+	    //driver.close();
 	    
 	   
 		

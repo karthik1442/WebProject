@@ -20,8 +20,9 @@ public class TimeSheet {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(30));
 		driver.findElement(By.xpath("//a[normalize-space()='Sign in']")).click();
-		driver.findElement(By.xpath("//input[@id='company']")).clear();
-		driver.findElement(By.xpath("//input[@id='company']")).sendKeys("prokarma");
+		//driver.findElement(By.id("company")).sendKeys("prokarma");
+		//driver.findElement(By.xpath("//input[@id='company']")).clear();
+	//driver.findElement(By.xpath("//*[@id='company']")).sendKeys("prokarma");
 		driver.findElement(By.xpath("//input[@id='login']")).sendKeys("Kkutala");
 		driver.findElement(By.xpath("//input[@id='passwd']")).sendKeys("Dady1234@");
 		driver.findElement(By.xpath("//input[@id='retbutton']")).click();
