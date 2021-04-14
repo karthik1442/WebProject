@@ -14,7 +14,7 @@ public class swappingnumbers {
 
 		System.out.println("after swapping the values are .." + a + " " + b);
 
-//logic2
+        //logic2
 		a = a + b;
 		b = a - b;
 		a = a - b;

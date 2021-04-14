@@ -20,10 +20,10 @@ public class MouseHover {
 	    driver.get("https://demo.opencart.com/");
 	    driver.manage().window().maximize();
 	    Thread.sleep(2000);
-	WebElement dekstop= driver.findElement(By.xpath("//a[normalize-space()='Desktops']"));
-	WebElement mac= driver.findElement(By.xpath("//a[normalize-space()='Mac (1)']"));
-	Actions act =new Actions(driver);
-    act.moveToElement(mac).click().perform();
+	    WebElement dekstop= driver.findElement(By.xpath("//a[normalize-space()='Desktops']"));
+	    WebElement mac= driver.findElement(By.xpath("//a[normalize-space()='Mac (1)']"));
+	    Actions act =new Actions(driver);
+        act.moveToElement(mac).click().perform();
 	
 }
 }

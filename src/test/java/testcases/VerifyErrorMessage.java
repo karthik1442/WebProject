@@ -23,7 +23,6 @@ package testcases;
 		driver.manage().window().maximize();
 		System.out.println(driver.getTitle());
 		//Select dropdown = new Select(driver.findElement(By.xpath("//input[@id='autocomplete']")));
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//dropdown.selectByVisibleText("");
 		//dropdown.selectByVisibleText("");
 		driver.findElement(By.xpath("//input[@id='autocomplete']")).sendKeys("INDIA");

@@ -21,28 +21,39 @@ public class Selenium4Screenshot {
 		//taking screenshot for page section 
 		//taking screenshot for specific location.
 
+		//scenario 1 
 		/*WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/#/practice-project");
 		TakesScreenshot ts =(TakesScreenshot)driver;
 		File srcfile =ts.getScreenshotAs(OutputType.FILE);
-		File destfile=new File("Home.png");
+		File destfile=new File(".\\screenshot\\Home.png");
 		FileUtils.copyFile(srcfile, destfile);
 		driver.close();*/
 		
 		//scenario 2 
-		WebDriverManager.chromedriver().setup();
+		/*WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.nopcommerce.com/en");
 		WebElement pagesection=driver.findElement(By.xpath("//div[@class='business-data']"));
 		File src=pagesection.getScreenshotAs(OutputType.FILE);
-		File trg= new File("pagesection.png");
+		File trg= new File(".\\screenshot\\pagesection.png");
+		FileUtils.copyFile(src, trg);
+		driver.close();*/
+		
+		//scenario3
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.nopcommerce.com/en");
+		WebElement element =driver.findElement(By.xpath("//div[@class='home-banner-image-section']"));
+		File src=element.getScreenshotAs(OutputType.FILE);
+		File trg=new File(".\\screenshot\\elementsection.png");
 		FileUtils.copyFile(src, trg);
 		driver.close();
 		
 		
 		
-
+	
 	}
 
 }
