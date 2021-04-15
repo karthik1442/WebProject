@@ -21,6 +21,7 @@ public class Javascriptexecutor {
 		//JavaScriptutils.drawBorderByJs(button, driver);
 		JavaScriptutils.scrollpageDownByJs(driver);
 		JavaScriptutils.scrollpageUpByJs(driver);
+		JavaScriptutils.zoomoageByJs(driver);
 		driver.close();
 		
 	}

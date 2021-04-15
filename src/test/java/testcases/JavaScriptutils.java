@@ -54,10 +54,23 @@ public class JavaScriptutils {
 		
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
 		js.executeScript("window.scrollBy(0,-docuemnt.body.scrollHeight)");
-	
-		
+
 		
 	}
 	
+	/*public static void zoomoageByJs(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("document.body.style.zoom='50'");
 	
+	}*/
+
+
+	public static void zoomoageByJs(WebDriver driver) {
+		// TODO Auto-generated method stub
+
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("document.body.style.zoom='50'");
+	}
 }
