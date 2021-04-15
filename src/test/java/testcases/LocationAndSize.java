@@ -41,7 +41,7 @@ public class LocationAndSize {
 	    driver.close();
 		
 		
-		
+		//need to check size of the elelemnts chnages 
 
 	}
 
