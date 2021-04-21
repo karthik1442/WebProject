@@ -47,6 +47,7 @@ public class JavaScriptsAlerts {
 		driver.findElement(By.xpath("//button[normalize-space()='Click for JS Prompt']")).click();
 		Thread.sleep(2000);
 		Alert alertWindow2 =driver.switchTo().alert();
+		Thread.sleep(2000);
 		alertWindow2.sendKeys("hello karthik");
 		alertWindow2.accept();
 		//System.out.println(alertWindow2.getText());
