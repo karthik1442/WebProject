@@ -34,7 +34,7 @@ public class GitLaunch {
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//span[normalize-space()='Develop_branch']")).click();
 	    Thread.sleep(2000);
-	    //driver.close();
+	    driver.close();
 	}
  
 }
