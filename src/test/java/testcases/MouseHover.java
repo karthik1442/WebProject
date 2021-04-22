@@ -24,6 +24,7 @@ public class MouseHover {
 	    WebElement mac= driver.findElement(By.xpath("//a[normalize-space()='Mac (1)']"));
 	    Actions act =new Actions(driver);
         act.moveToElement(mac).click().perform();
+        driver.close();
 	
 }
 }
